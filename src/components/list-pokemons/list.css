@@ -1,0 +1,11 @@
+.poke-card{
+    background-color: aqua;
+    height: fit-content;
+    padding: 10px;
+    margin: 5px;
+    width: 350px;
+    font-size: 12px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-evenly;
+}

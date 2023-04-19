@@ -1,0 +1,22 @@
+{
+    "bulbasaur": "./bulbasaur.png",
+    "ivysaur": "./ivysaur.png",
+    "venusaur": "./charmander.png",
+    "charmander": "./charmander.png",
+    "charmeleon": "./charmander.png",
+    "charizard": "./charmander.png",
+    "squirtle": "./charmander.png",
+    "wartortle": "./charmander.png",
+    "blastoise": "./charmander.png",
+    "caterpie": "./charmander.png",
+    "metapod": "./charmander.png",
+    "butterfree": "./charmander.png",
+    "weedle": "./charmander.png",
+    "kakuna": "./charmander.png",
+    "beedrill": "./charmander.png",
+    "pidgey": "./charmander.png",
+    "pidgeotto": "./pidgeotto.png",
+    "pidgeot": "./pidgeot",
+    "rattata": "./rattata.png",
+    "raticate": "./raticate.png"
+}
