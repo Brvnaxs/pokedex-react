@@ -1,11 +1,33 @@
+.List{
+    display: flex;
+    border: solid 2px #D3C9E8;
+    border-radius: 23px;
+    flex-grow: 2; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 .poke-card{
-    background-color: aqua;
-    height: fit-content;
+    height: 250px;
     padding: 10px;
     margin: 5px;
-    width: 350px;
-    font-size: 12px;
+    width: 250px;
+    font-size: 10px;
     text-transform: capitalize;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
+    color: black;
+    border: solid 2px #D3C9E8;
+    border-radius: 10px;
+}
+.poke-card img{
+    height: 100px;
+    width: 150px;
+    align-self: center;
+    justify-self: center;
+    background-color: #D3C9E8;
+    padding: 30px;
+}
+.poke-card button{
+    background-color: #D3C9E8;
 }
