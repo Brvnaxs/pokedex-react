@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 .Login{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     align-self: center;
+    font-family: 'Teko', sans-serif;
+    color: #08080c;
 }
 .login-forms{
     display: flex;
     flex-direction: column;
     align-content: space-between;
+    
 }
 
 .login-forms h1{
@@ -21,20 +25,24 @@
     width: 400px;
     background: none;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #08080c;
     margin-bottom: 10px;
     outline: none;
 }
 .login-forms input::placeholder{
-    font-size: 16px;
+    font-size: 1.2rem;
+    font-family: 'Teko', sans-serif;
 }
 
 .login-forms button{
+    color: #ffff;
     margin-top: 10px;
-    background-color: #D3C9E8;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right, #08080c, #1d1e33, #302f5c, #484186, #6552b2, #6851b8, #6b51be, #6f50c4, #543fa6, #3b2f88, #22206b, #06114f);
 }
-.login-forms span{
+.link{
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1.2rem;
     margin-top: 10px;
+    color: #08080c;
 }

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import './login.css';
 
 export default function Login() {
@@ -8,7 +9,9 @@ export default function Login() {
                 <input type="email" name="" id="" placeholder='Email' />
                 <input type="password" name="" id="" placeholder='Senha' />
                 <button type="submit">Entrar</button>
-                <span>Ainda não possue cadastro? Cadastre-se já</span>
+                <Link className="link" to="/cadastro">
+                Ainda não possue cadastro? Cadastre-se já
+                </Link>
             </div>
         </div>
     )

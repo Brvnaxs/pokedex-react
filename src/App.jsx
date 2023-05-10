@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import {Route, Routes} from 'react-router-dom'
 import List from './components/list-pokemons/List';
 import Header from './components/header/Header';
 import Login from './components/login/Login';
@@ -10,7 +11,10 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      <Modal />
+      <Routes >
+        <Route path='/' element={<Login/>}/>
+        <Route path='/cadastro' element={<Cadastro/>}/>
+      </Routes>
     </div>
   )
 }

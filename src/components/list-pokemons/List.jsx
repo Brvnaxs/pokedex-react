@@ -18,8 +18,9 @@ export default function List(){
             });
         })
     }, [])
-
+    
     return(
+        
         <div className='List'>
             {
                 pokemonsList.map(pokemon =>{

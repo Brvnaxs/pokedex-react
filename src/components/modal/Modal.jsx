@@ -1,10 +1,11 @@
+import loadingGif from '../../assets/loading.gif'
 import './modal.css';
 
 import { useEffect, useState } from 'react';
 export default function Modal() {
     const [pokemon, setPokemon] = useState({})
     useEffect(() => {
-        fetch('https://pokeapi.co/api/v2/pokemon/15/')
+        fetch('https://pokeapi.co/api/v2/pokemon/12/')
             .then(res => res.json())
             .then(res => {
                     fetch(res.species.url)
@@ -25,12 +26,15 @@ export default function Modal() {
     }, [])
     
     if (!pokemon) {
-        return <h1>Loading</h1>
+        return <div className='loading'>
+            <img src={loadingGif} alt="gif" />
+            <h1>Loading...</h1>
+        </div>
     }
 
     return (
         <div className='Modal' key={pokemon.id}>
-            <img src={pokemon.image} alt={pokemon.name}  />
+            
             <div className='modal-infos'>
             <h1>{pokemon.name}</h1>
             <h2>{pokemon.description}</h2>
@@ -41,6 +45,7 @@ export default function Modal() {
                 <p>Peso: {pokemon.weight} kg</p>
                 </div>
             </div>
+            <img src={pokemon.image} alt={pokemon.name}  />
         </div>
     )
 }
