@@ -12,9 +12,10 @@ function App() {
   return (
     <div className="App">
       <Routes >
-        <Route path='/' element={<Home/>}/>
-        <Route path='/cadastro' element={<Cadastro/>}/>
-        <Route path='/pokes-infos' element={<Modal />}/>
+        <Route path='/' element={<Login />}/>
+        <Route path='/cadastro' element={<Cadastro />}/>
+        <Route path='/home/:username' element={<Home />}/>
+        <Route path='/pokes-infos/:id' element={<Modal />}/>
       </Routes>
     </div>
   )

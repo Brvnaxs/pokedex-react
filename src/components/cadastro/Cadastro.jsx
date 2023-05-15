@@ -12,7 +12,7 @@ export default function Cadastro(){
     function handleUsers(){
         const user = {"name": name, "username": username, "email": email, "password": password}
         setUsuarios(current => [...current, user])
-        navigate('/')
+        useNavigate('/')
     }
     return(
         <div className='Cadastro'>
@@ -23,9 +23,9 @@ export default function Cadastro(){
                 <input type="email"  placeholder='Email' value={email} onChange={e => setEmail(e.target.value)}/>
                 <input type="password"  placeholder='Senha' value={password} onChange={e => setPassword(e.target.value)}/>
                 <button type="submit" onClick={handleUsers}>Cadastrar</button>
-                <Link className="link" to='/'>
+                <span className="link" onClick={handleUsers}>
                     Já possui cadastro? Faça seu Login
-                </Link>
+                </span>
                 
             </div>
         </div>

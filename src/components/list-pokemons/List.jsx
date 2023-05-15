@@ -3,6 +3,7 @@ import { Navigate, useNavigate } from 'react-router-dom';
 import './list.css';
 
 export default function List(){
+    const navigate = useNavigate()
     const [pokemonsList, setPokemonsList] = useState([]);
     useEffect(() =>{
         fetch('https://pokeapi.co/api/v2/pokemon')
@@ -19,7 +20,7 @@ export default function List(){
         })
     }, [])
     function HandleInfo(id){
-        useNavigate(`/pokes-infos/${id}`)
+        navigate(`/pokes-infos/${id}`)
     }
     return(
         
