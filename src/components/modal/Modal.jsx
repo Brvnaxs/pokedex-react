@@ -1,11 +1,13 @@
+import { useParams } from 'react-router-dom';
 import loadingGif from '../../assets/loading.gif'
 import './modal.css';
 
 import { useEffect, useState } from 'react';
 export default function Modal() {
     const [pokemon, setPokemon] = useState({})
+    const id = useParams()
     useEffect(() => {
-        fetch('https://pokeapi.co/api/v2/pokemon/12/')
+        fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
             .then(res => res.json())
             .then(res => {
                     fetch(res.species.url)

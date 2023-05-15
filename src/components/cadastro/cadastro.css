@@ -41,8 +41,9 @@
     background-image: linear-gradient(to right, #08080c, #1d1e33, #302f5c, #484186, #6552b2, #6851b8, #6b51be, #6f50c4, #543fa6, #3b2f88, #22206b, #06114f);
 }
 
-.cadastro-forms span{
+.link{
     cursor: pointer;
     font-size: 1.2rem;
     margin-top: 10px;
+    color: #08080c;
 }

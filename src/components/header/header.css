@@ -1,21 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 .Header{
     display: flex;
     align-items: center;
     width: 100%;
-    background-color: #D3C9E8;
-    font-family: 'Schibsted Grotesk', sans-serif;
+    font-family: 'Teko', sans-serif;
+    color: #fff;
     height: 70px;
     padding: 10px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to right, #08080c, #1d1e33, #302f5c, #484186, #6552b2, #6851b8, #6b51be, #6f50c4, #543fa6, #3b2f88, #22206b, #06114f);
 }
 .Header h1{
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-transform: capitalize;
     font-weight: 800;
     margin-right: auto;
+    letter-spacing: 3px;
 }
 .Header h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: capitalize;
+    letter-spacing: 1px;
 }
 .icon{
     height: 30px;
