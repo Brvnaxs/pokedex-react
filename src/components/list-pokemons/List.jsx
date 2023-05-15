@@ -31,7 +31,7 @@ export default function List(){
                         <div className='poke-card' key={pokemon.id}>
                             <img src={pokemon.image} alt={pokemon.name} />
                             <h1>{pokemon.name}</h1>
-                            <button onClick={HandleInfo}>Informações</button>
+                            <button onClick={()=> HandleInfo(pokemon.id)}>Informações</button>
                         </div>
                     )
                 })

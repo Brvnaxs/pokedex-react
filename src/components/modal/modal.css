@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+.modal-container{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .Modal {
     width: 80%;
     height: 70%;

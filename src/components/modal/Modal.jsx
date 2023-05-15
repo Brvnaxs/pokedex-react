@@ -5,7 +5,7 @@ import './modal.css';
 import { useEffect, useState } from 'react';
 export default function Modal() {
     const [pokemon, setPokemon] = useState({})
-    const id = useParams()
+    const {id} = useParams()
     useEffect(() => {
         fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
             .then(res => res.json())
@@ -35,6 +35,7 @@ export default function Modal() {
     }
 
     return (
+        <div className='modal-container'>
         <div className='Modal' key={pokemon.id}>
             
             <div className='modal-infos'>
@@ -48,6 +49,7 @@ export default function Modal() {
                 </div>
             </div>
             <img src={pokemon.image} alt={pokemon.name}  />
+        </div>
         </div>
     )
 }
