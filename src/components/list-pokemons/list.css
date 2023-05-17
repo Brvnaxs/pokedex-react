@@ -29,8 +29,21 @@
     background-color: #6552b2;
     padding: 30px;
 }
-.poke-card button{
+ .button{
     color: #ffff;
     font-size: 1rem;
     background-image: linear-gradient(to right, #08080c, #1d1e33, #302f5c, #484186, #6552b2, #6851b8, #6b51be, #6f50c4, #543fa6, #3b2f88, #22206b, #06114f);
+}
+.favorites{
+    color: #6552b2;
+    background-color: #fff;
+}
+.icone{
+    height: 20px;
+    width: 20px;
+}
+.name-fav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }

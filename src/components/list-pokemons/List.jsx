@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { MdFavoriteBorder } from "react-icons/md";
 import './list.css';
 
-export default function List(){
+export default function List({funcFav}){
     const navigate = useNavigate()
     const [pokemonsList, setPokemonsList] = useState([]);
     useEffect(() =>{
@@ -19,19 +20,26 @@ export default function List(){
             });
         })
     }, [])
+
     function HandleInfo(id){
         navigate(`/pokes-infos/${id}`)
     }
+    
     return(
         
         <div className='List'>
             {
                 pokemonsList.map(pokemon =>{
                     return(
-                        <div className='poke-card' key={pokemon.id}>
+                        <div className='poke-card' key={pokemon.name}>
                             <img src={pokemon.image} alt={pokemon.name} />
+                            <div className='name-fav'>
                             <h1>{pokemon.name}</h1>
-                            <button onClick={()=> HandleInfo(pokemon.id)}>Informações</button>
+                            <button className='favorites' onClick={()=> funcFav()}>
+                                <MdFavoriteBorder className='icone'/>
+                            </button>
+                            </div>
+                            <button className='button' onClick={()=> HandleInfo(pokemon.id)}>Informações</button>
                         </div>
                     )
                 })

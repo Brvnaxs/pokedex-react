@@ -15,12 +15,14 @@
     text-transform: capitalize;
     font-weight: 800;
     margin-right: auto;
+    margin-left: 5px;
     letter-spacing: 3px;
 }
 .Header h2{
     font-size: 2rem;
     text-transform: capitalize;
     letter-spacing: 1px;
+    margin-right: 20px;
 }
 .icon{
     height: 30px;
@@ -31,6 +33,7 @@
     height: fit-content;
     display: flex;
     margin-right: 10px;
+    cursor: pointer;
 }
 .favs span{
     align-self: flex-start;

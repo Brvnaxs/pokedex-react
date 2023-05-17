@@ -13,8 +13,6 @@ export default function Login() {
         for(var i = 0; i < usuarios.length; i++){
             if (usuarios[i].username == username && usuarios[i].password == password){
                 navigate(`/home/${username}`)
-            }else{
-                alert('Dados inválidos. Você já possui cadastro?')
             }
         }
         

@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import React from 'react';
 import {Route, Routes} from 'react-router-dom'
-import List from './components/list-pokemons/List';
+import Favoritos from './components/favoritos/Favoritos';
 import Login from './components/login/Login';
 import Cadastro from './components/cadastro/Cadastro';
 import Modal from './components/modal/Modal';
@@ -16,6 +16,7 @@ function App() {
         <Route path='/cadastro' element={<Cadastro />}/>
         <Route path='/home/:username' element={<Home />}/>
         <Route path='/pokes-infos/:id' element={<Modal />}/>
+        <Route path='/favoritos' element={<Favoritos />} />
       </Routes>
     </div>
   )

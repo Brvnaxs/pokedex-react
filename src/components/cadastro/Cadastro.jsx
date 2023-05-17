@@ -15,7 +15,6 @@ export default function Cadastro() {
         const user = { "name": name, "username": username, "email": email, "password": password }
         usuarios.push(user)
         navigate('/')
-        console.log(usuarios)
     }
     return (
         <div className='Cadastro'>
