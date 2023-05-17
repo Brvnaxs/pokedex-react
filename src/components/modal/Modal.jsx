@@ -28,10 +28,10 @@ export default function Modal() {
     }, [])
     
     if (!pokemon) {
-        return <div className='loading'>
+        return( <div className='loading'>
             <img src={loadingGif} alt="gif" />
             <h1>Loading...</h1>
-        </div>
+        </div>)
     }
 
     return (

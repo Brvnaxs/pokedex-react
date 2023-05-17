@@ -2,11 +2,16 @@
 .Login{
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-self: center;
     font-family: 'Teko', sans-serif;
     color: #08080c;
+}
+.Login img{
+    height: 140px;
+    width: 150px;
 }
 .login-forms{
     display: flex;

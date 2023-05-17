@@ -5,7 +5,6 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     font-family: 'Teko', sans-serif;
-    background-color: #ffff;
 }
 .poke-card{
     height: 250px;
