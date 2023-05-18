@@ -35,7 +35,7 @@ export default function List({funcFav}){
                             <img src={pokemon.image} alt={pokemon.name} />
                             <div className='name-fav'>
                             <h1>{pokemon.name}</h1>
-                            <button className='favorites' onClick={()=> funcFav()}>
+                            <button className='favorites' onClick={()=> funcFav(pokemon.id)}>
                                 <MdFavoriteBorder className='icone'/>
                             </button>
                             </div>

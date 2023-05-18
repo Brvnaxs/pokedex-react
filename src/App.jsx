@@ -16,7 +16,7 @@ function App() {
         <Route path='/cadastro' element={<Cadastro />}/>
         <Route path='/home/:username' element={<Home />}/>
         <Route path='/pokes-infos/:id' element={<Modal />}/>
-        <Route path='/favoritos' element={<Favoritos />} />
+        <Route path='/favoritos/:favorites' element={<Favoritos />} />
       </Routes>
     </div>
   )

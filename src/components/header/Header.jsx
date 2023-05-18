@@ -2,17 +2,13 @@ import './header.css';
 import { MdFavoriteBorder } from "react-icons/md";
 import { useNavigate } from 'react-router-dom';
 import logo from "../../assets/pokebola.png"
-export default function Header({username, favoritos}){
-    const navigate = useNavigate();
-function goToFavs(){
-    navigate('/favoritos')
-}
+export default function Header({username, favoritos, goToFavs}){
     return(
         <div className='Header'>
             <img src={logo} alt="" />
             <h1>Pokedex</h1>
             
-            {<div className='favs' onClick={goToFavs}>
+            {<div className='favs' onClick={() => goToFavs}>
                 <MdFavoriteBorder className='icon' />
                 <span>{favoritos}</span>
             </div>}

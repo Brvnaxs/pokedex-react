@@ -1,0 +1,38 @@
+.Favoritos {
+    display: flex;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: 'Teko', sans-serif;
+}
+
+.poke-card {
+    height: 250px;
+    padding: 10px;
+    margin: 5px;
+    width: 250px;
+    font-size: 10px;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #08080c;
+    border: solid 2px #3b2f88;
+    border-radius: 10px;
+}
+
+.poke-card img {
+    height: 100px;
+    width: 150px;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10px;
+    background-color: #6552b2;
+    padding: 30px;
+}
+
+.button {
+    color: #ffff;
+    font-size: 1rem;
+    background-image: linear-gradient(to right, #08080c, #1d1e33, #302f5c, #484186, #6552b2, #6851b8, #6b51be, #6f50c4, #543fa6, #3b2f88, #22206b, #06114f);
+}
